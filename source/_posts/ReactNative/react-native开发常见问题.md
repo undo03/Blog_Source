@@ -2,9 +2,10 @@
 title: react-native开发常见问题
 tags: [react-native]
 categories: ReactNative
+date: 2018-06-12
 ---
 
-## react-native开发常见问题
+react-native开发中常见的问题汇总，以下是我最近在项目开发中遇到的常见的问题，做以下记录以便后续项目中使用。
 
 ### 1. 监听网状连接状态的变化  
 ```javascript 
