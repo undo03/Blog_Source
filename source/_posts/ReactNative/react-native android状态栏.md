@@ -114,7 +114,8 @@ StatusBar属性简介：
 	ActionBar actionBar = getSupportActionBar();
 	actionBar.hide();
 
-``` 
+```
+
 
 ### 3. 浅色状态栏的兼容性配置
 
