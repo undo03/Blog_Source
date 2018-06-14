@@ -1,6 +1,7 @@
 ---
 title: Hexo + github 搭建个人博客
 tags: [hexo,搭建博客]
+date: 2018-06-10
 categories: Periphery
 ---
 hexo是一款基于Node.js的静态博客框架,官网地址:[https://hexo.io/zh-cn/](https://hexo.io/zh-cn/).
