@@ -6,6 +6,8 @@ categories: Periphery
 ---
 hexo是一款基于Node.js的静态博客框架,官网地址:[https://hexo.io/zh-cn/](https://hexo.io/zh-cn/).
 
+<!--more-->
+
 ## Quick Start
 
 ### 必备环境

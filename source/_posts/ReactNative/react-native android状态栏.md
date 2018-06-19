@@ -7,6 +7,8 @@ date: 2018-06-12
 
 react-native 开发App的时候难免会遇到状态栏的背景颜色和字体颜色与App内容页面色调适配，间言之就是将状态栏颜色与App颜色一致，使用户界面更加整体。
 
+<!--more-->
+
 ## react-native android状态栏
   
 ### 1.android设备系统元素
