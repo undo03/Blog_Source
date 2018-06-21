@@ -346,24 +346,28 @@
       </div>
     {% endif %}
 
-    {% if theme.post_copyright.enable and not is_index %}
-      <div>
-        {% include 'post-copyright.swig' with { post: post } %}
-      </div>
-    {% endif %}
     <div>
       {% if not is_index %}
         {% include 'passage-end-tag.swig' %}
       {% endif %}
     </div>
+    
+    {% if post.tags and post.tags.length and not is_index %}
+      <div class="post-tags">
+        {% for tag in post.tags %}
+          <a href="{{ url_for(tag.path) }}" <i class="fa fa-tag"></i> {{ tag.name }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if theme.post_copyright.enable and not is_index %}
+      <div>
+        {% include 'post-copyright.swig' with { post: post } %}
+      </div>
+    {% endif %}
+  
     <footer class="post-footer">
-      {% if post.tags and post.tags.length and not is_index %}
-        <div class="post-tags">
-          {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" <i class="fa fa-tag"></i> {{ tag.name }}</a>
-          {% endfor %}
-        </div>
-      {% endif %}
+      
 
       {% if not is_index %}
       {% if theme.rating.enable or (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) or (theme.needmoreshare2.enable and theme.needmoreshare2.postbottom.enable) %}
