@@ -5,7 +5,7 @@ tags: [hexo,搭建博客]
 date: 2018-06-10
 categories: Periphery
 ---
-hexo是一款基于Node.js的静态博客框架,官网地址:[https://hexo.io/zh-cn/](https://hexo.io/zh-cn/).
+[Hexo](https://hexo.io/zh-cn/) 是高效的静态站点生成框架，她基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。
 
 <!--more-->
 
