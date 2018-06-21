@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Undo's Blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -126,9 +126,9 @@ scheme: Mist
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-social:
-  github: https://github.com/undo03
-  e-mail: mailto:songqibin03@gmail.com
+# social:
+  # github: https://github.com/undo03
+  # e-mail: mailto:songqibin03@gmail.com
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -138,15 +138,15 @@ social:
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
-social_icons:
-  enable: true
-  icons_only: false
-  transition: false
+# social_icons:
+#   enable: true
+#   icons_only: false
+#   transition: false
 
 # Blog rolls
-links_icon: link
-links_title: Links
-links_layout: block
+# links_icon: link
+# links_title: Links
+# links_layout: block
 #links_layout: inline
 #links:
   #Title: http://example.com/

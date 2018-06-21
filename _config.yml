@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Undo's Blog
+title: Undo
 subtitle: Move fast and break things.
 description: An effort to become the front end of a full stack engineer
-keywords: undo, blog
+keywords: Undo, blog
 author: Undo
 language: zh-Hans
 timezone:

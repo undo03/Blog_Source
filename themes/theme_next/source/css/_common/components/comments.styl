@@ -1,1 +1,30 @@
 .comments { margin: 60px 20px 0; }
+#gitment-container {
+  .gitment-container {
+    a {
+      text-decoration: none;
+      &.gitment-header-issue-link:hover {
+        color: #222;
+      }
+      &.gitment-editor-login-link {
+        color: #555;
+        &:hover {
+          color: #222;
+        }
+      }
+    }
+    .gitment-comments-init-btn {
+      background: #e1e1e1;
+      color: #555;
+      border-radius: 3px;
+      &:hover {
+        background: #555;
+        color: #fff;
+      }
+    }
+    .gitment-editor-submit {
+      background: #e1e1e1;
+      color: #555;
+    }
+  }
+}
