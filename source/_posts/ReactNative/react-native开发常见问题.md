@@ -1,5 +1,6 @@
 ---
 title: react-native开发常见问题
+subtitle: 常见问题
 tags: [react-native]
 categories: ReactNative
 date: 2018-06-12
