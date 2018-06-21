@@ -1,5 +1,6 @@
 ---
 title: Hexo + github 搭建个人博客
+subtitle: hexo blog
 tags: [hexo,搭建博客]
 date: 2018-06-10
 categories: Periphery
