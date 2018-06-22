@@ -11,14 +11,18 @@
   .post-eof { display: none; }
 
   .post {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px dashed #999;
+    margin-bottom: 60px;
+    .post-block {
+      padding-top: 40px;
+      border-top: 1px dashed #999;
+    }
   }
   .post:first-child {
     margin-top: 0;
-    padding-top: 0;
-    border-top: none;
+    .post-block {
+      padding-top: 0;
+      border-top: none;
+    }
   }
 
   .post-meta {

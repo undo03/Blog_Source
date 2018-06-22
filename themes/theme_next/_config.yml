@@ -40,7 +40,7 @@ keywords: "Undo's Blog"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 footer:
   # Specify the date when the site was setup.
@@ -353,7 +353,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 55f8c57b72bd18b767da7388e66664fa
 
 # Duoshuo ShortName
 #duoshuo_shortname:
