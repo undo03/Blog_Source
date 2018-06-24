@@ -11,7 +11,7 @@ description:
 
 <!--more-->
 
-## 1. Promise简介
+### 1. Promise简介
 
 `Promise`本意是承诺，在程序中的意思就是承诺我`过一段时间后`会给你一个结果。 什么时候会用到过一段时间？答案是异步操作，异步是指可能比较长时间才有结果的才做,常见的比如网络请求、文件读取等.
 
@@ -66,7 +66,7 @@ ajaxPromise(method, url, successFun, failFun){
 ajaxPromise('get','www.xxx.com').then(successFun, failFun)
 ```
 
-## 2. Promise原理分析
+### 2. Promise原理分析
 
 `promise`原理并不难,它内部有三个状态，分别是`pending`,`fulfilled`和`rejected` .
 
@@ -105,9 +105,9 @@ class Promise {
 }
 ```
 
-## 4. Promise基本用法
+### 4. Promise基本用法
 
-`Promise`对象拥有两个实例方法`then()`和`catch()`,`then`方法返回新的`promise`,因此支持链式写法
+`Promise`对象拥有两个实例方法`then()`,`catch()` 和 `finally`,`then`方法返回新的`promise`,因此支持链式写法
 
 ```javascript
 let promise = new Promise((resolve, reject) => {
@@ -132,7 +132,9 @@ promise.then((result) => {
 
 构造函数`Promise`的参数时一个函数,这个函数接收来两个参数`resolve`和`reject`,`resolve`和`reject`同时也是函数,`resolve`会在`promise`从`pending`转换成 `Fulfilled`时执行, `reject`会在`promise`从`pending`转换成 `Rejected`时执行.
 
-`then`方法会返回一个新的`promise`,`then`方法将上一步的返回结果获取过来进行后续的处理,它接受两个函数作为参数，第一个函数是用来处理`resolve`的结果，第二个是可选的，用来处理`reject`的结果,`then`对应的参数不为函数时,会将前一`promise`的状态和值传递下去.
+#### 4.1 Promise.prototype.catch()
+
+`then()`方法会返回一个新的`promise`,`then`方法将上一步的返回结果获取过来进行后续的处理,它接受两个函数作为参数，第一个函数是用来处理`resolve`的结果，第二个是可选的，用来处理`reject`的结果,`then`对应的参数不为函数时,会将前一`promise`的状态和值传递下去.
 
 ```javascript
 let p = new Promise((resolve, reject) => {
@@ -162,7 +164,9 @@ let p2 = p1.then((value) => {
 })
 ```
 
-`catch`方法其实是`then`方法的一种语法糖,当`then`方法第一个参数传`undefined` 或者 `null`即可达到`catch`的目的
+#### 4.2 Promise.prototype.catch()
+
+`catch()`方法其实是`then`方法的一种语法糖,当`then`方法第一个参数传`undefined` 或者 `null`即可达到`catch`的目的
 
 ```javascript
 let promise = new Promise((resolve, reject) => {
@@ -207,13 +211,24 @@ promise.then((result) => {
 })
 ```
 
-## 5. Promise  API
+#### 4.3 Promise.prototype.finally()
+
+`finally()` 方法返回一个`Promise`,在执行`then()`和`catch()`后,都会执行`finally`指定的回调函数.避免同样的语句需要在`then()`和`catch()`中各写一次的情况.
+
+`finally()` 虽然与 `.then(onFinally, onFinally)` 类似,它们不同的是:
+
+* 调用内联函数时,不需要多次声明该函数或为该函数创建一个变量保存它.
+* 由于无法知道`promise`的最终状态,所以`finally`的回调函数中不接收任何参数,它仅用于无论最终结果如何都要执行的情况.
+* 与`Promise.resolve(2).then(() => {}, () => {})` （`resolved`的结果为`undefined`）不同,`Promise.resolve(2).finally(() => {})` `resolved`的结果为 `2`.
+* 同样,`Promise.reject(3).then(() => {}, () => {})` (`resolved` 的结果为`undefined`), `Promise.reject(3).finally(() => {})` rejected 的结果为 `3`.
+
+### 5. Promise  API
 
 `Promise`还有四个静态方法，分别是`resolve`、`reject`、`all`、`race`,下面一一介绍.
 
 除了通过`new Promise()`的方式，我们还有两种创建`Promise`对象的方法,分别是`Promise.resolve()` 和 `Promise.reject()`
 
-### 5.1 Promise.resolve
+#### 5.1 Promise.resolve
 
 `Promise.resolve()` 它相当于创建了一个立即`resolve`的`promise`对象,这个对象处于`resolve`状态
 
@@ -231,7 +246,7 @@ p2.then(res => {
     console.log(res) // resolve
 })
 ```
-### 5.2 Promise.reject
+#### 5.2 Promise.reject
 
 `Promise.reject()` 很明显它相当于创建了一个立即`reject`的`promise`对象,这个对象处于`reject`状态
 
@@ -241,7 +256,7 @@ Promise.reject('err').catch(err => {
 })
 ```
 
-### 5.3 Promise.all
+#### 5.3 Promise.all
 
 `Promise.all()` 它接收一个promise对象组成的数组作为参数，并返回一个新的`promise`对象
 
@@ -301,7 +316,7 @@ Promise.all([
 
 `Promise.all()`中即使前面`reject`了,所有的对象也都会执行完毕.规范中`promise`对象执行是不可以中断的.
 
-### 5.4 Promise.race
+#### 5.4 Promise.race
 
 `Promise.race()` 它同样接收一个`promise`对象组成的数组作为参数,并返回一个新的`promise`对象
 

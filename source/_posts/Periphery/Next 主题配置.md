@@ -13,19 +13,19 @@ NexT 拥有丰富而简单的配置，结合第三方服务，打造属于您自
 
 #### 1.1 到 [leancloud.cn](https://leancloud.cn/) 注册账号，创建应用，
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/1529573803947.jpg?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/1529573803947.jpg?raw=true)
 
 #### 1.2 在数据模块中 创建Class，名称一般为 Counter
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/WX20180621-175120.png?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/WX20180621-175120.png?raw=true)
 
 #### 1.3 在设置中拿到该应用的 App ID 、 App Key
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/WX20180621-175238.png?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/WX20180621-175238.png?raw=true)
 
 #### 1.4 设置安全域名，只有在允许的域名下才会进行正常的统计
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/WX20180621-175623.png?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/WX20180621-175623.png?raw=true)
 
 #### 1.5 在主题的_config.yml中进行配置
 
@@ -44,11 +44,11 @@ hexo g
 hexo s
 ```
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/WX20180621-175319.png?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/WX20180621-175319.png?raw=true)
 
 然后在文章中就可以看到阅读次数了
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/WX20180621-184902.png?raw=true)
+![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/WX20180621-184902.png?raw=true)
 
 ### 2.集成评论 gitment
 
