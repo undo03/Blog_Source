@@ -1,6 +1,6 @@
 ---
 title: react-native android状态栏
-subtitle: statusbar
+subtitle: rn_statusbar
 tags: [react-native]
 categories: ReactNative
 date: 2018-06-12

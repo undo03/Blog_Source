@@ -1,7 +1,6 @@
-
 ---
 title: React Native Modal组件 Android覆盖状态栏
-subtitle: modal
+subtitle: rn_modal
 tags: [react-native]
 categories: ReactNative
 date: 2018-06-14

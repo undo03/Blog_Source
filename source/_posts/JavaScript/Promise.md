@@ -1,6 +1,6 @@
 ---
 title: Promise 简单介绍
-subtitle: promise
+subtitle: js_promise
 tags: [promise, ES6, JS]
 date: 2018-06-22
 categories: JavaScript
