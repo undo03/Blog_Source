@@ -3,7 +3,7 @@ title: NexT 主题配置
 subtitle: hexo next
 tags: [hexo,主题配置]
 date: 2017-06-11
-categories: Periphery
+categories: Hexo 主题
 ---
 NexT 拥有丰富而简单的配置，结合第三方服务，打造属于您自己的博客.NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。除了 Markdown 支持的语法之外，NexT 借助 Hexo 提供的标签特性， 为您提供在书写文档时快速插入带特殊样式的内容。使用 第三方服务 来扩展站点的功能， NexT 支持多种常见第三方服务。
 

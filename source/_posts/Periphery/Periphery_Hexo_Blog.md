@@ -3,7 +3,7 @@ title: Hexo + github 搭建个人博客
 subtitle: hexo blog
 tags: [hexo,搭建博客]
 date: 2017-06-10
-categories: Periphery
+categories: Hexo 主题
 ---
 [Hexo](https://hexo.io/zh-cn/) 是高效的静态站点生成框架，她基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。
 
