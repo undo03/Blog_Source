@@ -260,32 +260,6 @@ git branch -m devel develop
 git branch -m devel develop
 
 ```
-
-### 7. 常遇到的问题
-
-**git add ， git commit 添加错文件 撤销**
-
-`git add` 添加 多余文件
-
-`git status` 先看一下add 中的文件 
-`git reset HEAD` 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
-`git reset HEAD xxx/xxx/xxx.js` 就是对某个文件进行撤销了
-
-`git commit` 错误
-
-```javascript
-git log // 查看节点 
-commit xxxxxxxxxxxxxxxxxxxxxxxxxx 
-git reset commit_id
-```
-
-**撤销修改**
-
-```javascript
-git checkout . 
-git checkout file
-```
-
 **参考链接**
 [W3Cschool Git教程](https://www.w3cschool.cn/git/)
 [Git查看、删除、重命名远程分支和tag](http://blog.zengrong.net/post/1746.html)
