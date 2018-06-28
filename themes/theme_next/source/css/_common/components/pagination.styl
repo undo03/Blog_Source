@@ -1,7 +1,6 @@
 .pagination {
-  margin: 120px 0 40px;
+  margin: 20px auto;
   text-align: center;
-  border-top: 1px solid $pagination-border;
 }
 
 .page-number-basic {
@@ -9,8 +8,10 @@
   position: relative;
   top: -1px;
   margin: 0 10px;
-  padding: 0 11px;
-
+  // padding: 0 11px;
+  min-width: 48px;
+  height: 28px;
+  line-height: 28px;
   +mobile() { margin: 0 5px; }
 }
 
@@ -18,11 +19,10 @@
   .prev, .next, .page-number {
     @extend .page-number-basic;
     border-bottom: 0;
-    border-top: 1px solid $pagination-link-border;
     transition-property: border-color;
     the-transition();
-
-    &:hover { border-top-color: $pagination-link-hover-border; }
+    background: #f2f2f2;
+    &:hover { background: #b0b0b0; }
   }
 
   .space {
@@ -35,8 +35,8 @@
   .next { margin-right: 0; }
 
   .page-number.current {
-    color: $pagination-active-color;
-    background: $pagination-active-bg;
+    color: #fff;
+    background: #757575;
     border-top-color: $pagination-active-border;
   }
 }
