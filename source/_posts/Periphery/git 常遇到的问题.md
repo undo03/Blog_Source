@@ -53,12 +53,46 @@ git tag -d master
 
 #### 4. HEAD detached at head
 
+HEAD 没有指到某个分支的時候，它会呈现 detached 状态。事实上，更正确的说，应该是「当 HEAD 没有指到某个『本地』的分支」就会呈现这种状态
+
 ```javascript
-$ git branch new_branch_name 7c6fa98
-$ git merge new_branch_name
-$ git branch -D new_branch_name
+$ git checkout  origin/TEST
+Note: checking out 'origin/TEST'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at e53d4cba update
+```
+   
+```javascript
+$ git branch
+* (HEAD detached at origin/TEST)
+  RELEASE
+  dev_register_sqb
+  master
+```
+
+要切换到远端分支而不呈现 detached HEAD 状态，可以加上 --track 或 -t 参数, -t 参数是指会在本地建立一个名为追踪分支（tracking branch）的东西
+
+```javascript
+$ git checkout -t origin/TEST
+Branch 'TEST' set up to track remote branch 'TEST' from 'origin'.
+Switched to a new branch 'TEST'
+
+$ git branch
+  RELEASE
+* TEST
+  dev_register_sqb
+  master
 ```
 
 参考文章: 
-[如何从detached HEAD状态解救出来](https://www.jianshu.com/p/ae4857d2f868)
 [斷頭（detached HEAD）是怎麼一回事？](https://gitbook.tw/chapters/faq/detached-head.html)
+[如何从detached HEAD状态解救出来](https://www.jianshu.com/p/ae4857d2f868)
