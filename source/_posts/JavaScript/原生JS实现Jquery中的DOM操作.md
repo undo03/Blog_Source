@@ -467,17 +467,3 @@ function getElementsByClass(strClass, context) {
 ### 总结
 
 以上实现了大部分的常用的DOM操作的兼容写法,目的不在于去实现`jQuery`中API,而是从原理上理解`jQuery API`的实现原理,锻炼个人的编程能力,升华编程思想.
-
-
-
-
-
-
-
-
-
-###  
-
-```javascript
-
-```
