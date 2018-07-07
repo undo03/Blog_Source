@@ -2,24 +2,24 @@
 title: git-flow 工作流程
 subtitle: git_git_flow
 tags: [Git]
-date: 2017-08-12
+date: 2018-07-04
 categories: Git
 ---
 
 ## 一、前言
 
-git 最强大的就是其分支功能，但是如何分支才能更有效的提高开发效率，减少因为代码合并带来的问题，需要一个分支模型来规范，其实在 git flow 出现之前，已经有分支模型理论流程，当时是根据此理论，手动的按照规范操作分支，git flow 出现之后，将一部分操作流程简化为命令，并没有增加新的功能，只是简化了操作。
+`git` 最强大的就是其分支功能，但是如何分支才能更有效的提高开发效率，减少因为代码合并带来的问题，需要一个分支模型来规范，其实在` git flow` 出现之前，已经有分支模型理论流程，当时是根据此理论，手动的按照规范操作分支，`git flow` 出现之后，将一部分操作流程简化为命令，并没有增加新的功能，只是简化了操作。
 
 <!--more-->
 
 ## 二、git-flow 简介
 
 安装`git-flow`后，你将会拥有一些扩展命令。这些命令会在一个预定义的顺序下自动执行多个操作。
-`git-flow` 并不是要替代 Git，它仅仅是非常聪明有效地把标准的 Git 命令用脚本组合了起来。
+`git-flow` 并不是要替代 Git，它仅仅是非常聪明有效地把标准的 `Git` 命令用脚本组合了起来。
 严格来讲，你并不需要安装什么特别的东西就可以使用 `git-flow` 工作流程。你只需要了解，哪些工作流程是由哪些单独的任务所组成的，并且附带上正确的参数，以及在一个正确的顺序下简单执行那些对应的 Git 命令就可以了。当然，如果你使用 `git-flow` 脚本就会更加方便了，你就不需要把这些命令和顺序都记在脑子里。
 
 ## 三、安装
-目前流行的是 avh 版本的 git-flow
+目前流行的是 avh 版本的` git-flow`
 ```bash
 # 稳定版
 brew install git-flow-avh
@@ -37,7 +37,7 @@ git flow init
 
 ## 五、分支模型
 
-用 git flow 初始化工程目录完成后，只能看到两个分支：
+用 `git flow` 初始化工程目录完成后，只能看到两个分支：
 
 Gitflow使用两个分支来记录项目开发的历史，而不是使用单一的master分支。在Gitflow流程中，master只是用于保存官方的发布历史，而develop分支才是用于集成各种功能开发的分支。使用版本号为master上的所有提交打标签（tag）也很方便。
 ![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Perphery/2018-07-04_13-04-49.png?raw=true)
@@ -72,7 +72,7 @@ $ git flow feature start <branch-name>
 $ git flow feature finish <branch-name>
 ```
 
-该命令会把我们在当前分支的代码整合到‘develop’分支中去，之后，git-flow 会进行清理操作，删除当下完成的功能分支，将分支切换到‘develop’。
+该命令会把我们在当前分支的代码整合到‘develop’分支中去，之后，`git-flow` 会进行清理操作，删除当下完成的功能分支，将分支切换到‘develop’。
 
 ### release 分支
 
