@@ -88,7 +88,7 @@ download = async (orderId) => {
 
 效果图如下
 
-![](https://github.com/undo03/undo03.github.io/blob/master/article_images/Reactnative/20180712.gif?raw=true)
+![](https://raw.githubusercontent.com/undo03/undo03.github.io/master/article_images/ReactNative/20180712.gif)
 
 配置项解析：
 
