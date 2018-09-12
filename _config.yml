@@ -105,5 +105,5 @@ jsonContent:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:undo03/undo03.github.io.git
+  repository: https://github.com/undo03/undo03.github.io.git
   branch: master
