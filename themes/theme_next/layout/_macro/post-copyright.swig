@@ -23,8 +23,11 @@
 <p style="font-size:16px;font-weight:600;margin: 20px 0 0 0;">好友链接:</p>
 <ul class="post-copyright" style="margin-top:10px;">
   <li class="post-copyright-author">
-    <strong>李帅帅：</strong>
-    <a href="https://www.lishuaishuai.com/" target="_blank" title="李帅帅的博客">https://www.lishuaishuai.com</a>
+    <strong>ice_point：</strong>
+    <a href="https://www.lishuaishuai.com/" target="_blank" title="ice_point的博客">https://www.lishuaishuai.com</a>
   </li>
+  <li class="post-copyright-author">
+    <strong>lenore：</strong>
+    <a href="https://www.lenore412.com/" target="_blank" title="lenore的博客">https://www.lenore412.com</a>
   </li>
 </ul>
