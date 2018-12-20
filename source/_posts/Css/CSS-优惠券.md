@@ -112,7 +112,7 @@ description:
     }
   </style>
 ```
-![1542164268396](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181220104352.png?raw=true)
+![1542164268396](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220104352.png?raw=true)
 
 下面就来实现中间看着比较复杂的"凹槽"部分
 
@@ -151,7 +151,7 @@ description:
 }  
 ```
 
-![444444444](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181220110106.png?raw=true)
+![444444444](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220110106.png?raw=true)
 
 这样就实现了一个右上角的内圆弧，继续按照这个思路实现after元素，定位到右下角，这时候我们发现出现了问题，before元素覆盖了整个的盒子，把右下角的圆角给挡住了。
 
@@ -174,7 +174,7 @@ clip: rect(<top>, <right>, <bottom>, <left>);
 }
 ```
 
-![clip-before](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181220110917.png?raw=true)
+![clip-before](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220110917.png?raw=true)
 
 再按照这种思路实现下半部分，调整一下after元素的top值和裁剪的起始值即可。
 
@@ -194,7 +194,7 @@ clip: rect(<top>, <right>, <bottom>, <left>);
 
 最终效果如下：
 
-![clip-left](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181220111258.png?raw=true)
+![clip-left](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220111258.png?raw=true)
 
 同样按照这样的思路可以实现右边部分。
 
@@ -270,14 +270,21 @@ clip: rect(<top>, <right>, <bottom>, <left>);
 
 最终效果
 
-![clip-coupon](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181220112029.png?raw=true)
+![clip-coupon](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220112029.png?raw=true)
 
 还有一个分割线，可以用绝对定位来实现。以上就是整个优惠券背景的实现。
 
+[codepen 演示](https://codepen.io/undo03/pen/maRrvN)
+
 #### 4. 相关知识点补充
 
-- border-radius 是左上、右上、左下、右下四个方向的复合属性，有两种设值方式
-  - <length>  定义圆形半径或椭圆的半长轴，半短轴。**负值无效**。
-  - <percentage> 使用百分数定义圆形半径或椭圆的半长轴，半短轴。水平半轴相对于盒模型的宽度；垂直半轴相对于盒模型的高度。**负值无效**。
-- clip The **clip** CSS property defines what portion of an element is visible. The `clip` property applies only to absolutely positioned elements, that is elements with `position:absolute` or `position:fixed`. The `<top>`, `<right>`, `<bottom>`, and `<left>` values may be either a <length> or `auto`. If any side's value is `auto`, the element is clipped to that side's *inside border edge*.
+`clip` 属性支持度，在[`Can I use`](https://caniuse.com/#search=clip) 上查看结果如下
+![https://caniuse.com/#search=clip](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220142745.png?raw=true)
+
+在不考虑IE的情况下，使用它是没有太大问题的，移动端可以放心使用。
+
+- `border-radius` 是左上、右上、左下、右下四个方向的复合属性，有两种设值方式
+  - `length`  定义圆形半径或椭圆的半长轴，半短轴。**负值无效**。
+  - `percentage` 使用百分数定义圆形半径或椭圆的半长轴，半短轴。水平半轴相对于盒模型的宽度；垂直半轴相对于盒模型的高度。**负值无效**。
+- `clip` The **clip** CSS property defines what portion of an element is visible. The `clip` property applies only to absolutely positioned elements, that is elements with `position:absolute` or `position:fixed`. The `<top>`, `<right>`, `<bottom>`, and `<left>` values may be either a `length` or `auto`. If any side's value is `auto`, the element is clipped to that side's *inside border edge*.
 
