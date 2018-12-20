@@ -11,7 +11,7 @@ description:
 
 最近在项目开发中遇到一个优惠券需求，与常见的优惠券类似，中部有反向的圆角。
 
-![1542164268396](https://raw.githubusercontent.com/undo03/Blog_Source/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181220100120.png)
+![1542164268396](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220100120.png?raw=true)
 
 类似于这样的优惠券，在开发中如何去实现呢。
 <!--more-->
@@ -20,7 +20,7 @@ description:
 
 我们遇到这样的需求，第一反应可能是使用背景图，要一张白底的带内圆角的背景图，就像下面这样：
 
-![1542164268396](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181220101203.png?raw=true)
+![1542164268396](https://github.com/undo03/Blog_Source/blob/theme_next/source/article_images/CSS/20181220101203.png?raw=true)
 
 这样当然没有问题，简单，方便，没有兼容性问题，即使在低版本的IE中也没有丝毫的问题，但是如果不考虑低版本浏览器，不考虑兼容性的话，使用css来实现会更好。
 
