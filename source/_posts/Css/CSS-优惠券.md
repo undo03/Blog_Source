@@ -274,7 +274,8 @@ clip: rect(<top>, <right>, <bottom>, <left>);
 
 还有一个分割线，可以用绝对定位来实现。以上就是整个优惠券背景的实现。
 
-[codepen 演示](https://codepen.io/undo03/pen/maRrvN)
+最终效果如下:
+{% codepen undo03|anonymous|anon maRrvN dark result] %}
 
 #### 4. 相关知识点补充
 
