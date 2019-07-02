@@ -136,3 +136,27 @@ function parseURL(url) {
 - url具备完整url信息的时候base会失效
 
 关于查询字符串的解析，实现的方式很多，这里不多说了。
+
+另外再补充一下使用  `URL` 的静态方法来实现文件下载的方案。
+
+URL.createObjectURL() 静态方法会创建一个 DOMString，其中包含一个表示参数中给出的对象的URL。这个 URL 的生命周期和创建它的窗口中的 document 绑定。这个新的URL 对象表示指定的 File 对象或 Blob 对象。
+在每次调用 createObjectURL() 方法时，都会创建一个新的 URL 对象，即使你已经用相同的对象作为参数创建过。当不再需要这些 URL 对象时，每个对象必须通过调用 URL.revokeObjectURL() 方法来释放。浏览器会在文档退出的时候自动释放它们，但是为了获得最佳性能和内存使用状况，应该在安全的时机主动释放掉它们。
+
+使用 `a` 标签 配合 `URL` 对象实现下载保存。
+
+```JavaScript
+    axios({
+        method: "get",
+        url: `/download/${id}`,
+        responseType: "blob",
+    }).then(response => {
+        var a = document.createElement("a");
+        var url = window.URL.createObjectURL(response.data);
+        a.href = url;
+        a.download = 'filename';
+        a.click();
+        window.URL.revokeObjectURL(url);
+    });
+```
+
+
