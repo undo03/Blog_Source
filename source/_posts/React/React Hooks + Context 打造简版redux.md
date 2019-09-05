@@ -1,5 +1,5 @@
 ---
-title: React Hooks + Context 打造简版redux
+title: React Hooks 模拟 redux
 subtitle: react-hooks-redux
 tags: [react, react-hooks-redux]
 date: 2019-09-05
